@@ -1,0 +1,92 @@
+.home {
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 30px;
+  margin-left: 10px;
+}
+.home-developer {
+  & .home-tag {
+    width: 220px;
+    color: var(--color-white);
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: linear-gradient(130deg, #522f4c 0%, #07161b 100%);
+    padding: 3px 15px;
+    border-radius: 25px;
+  }
+
+  & h1 {
+    font-size: 56px;
+
+    & .span-sobrenome {
+      color: var(--color-colorida);
+    }
+  }
+}
+
+.home-paragrafo {
+  width: 600px;
+  color: var(--color-white);
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.home-contato {
+  display: flex;
+  gap: 20px;
+  & button {
+    padding: 10px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    & a {
+      color: var(--color-white);
+    }
+  }
+}
+
+& .btn-curriculo {
+  background: linear-gradient(130deg, #3b1e2b 0%, #0a1f28 100%);
+}
+
+& .btn-contato {
+  background: linear-gradient(130deg, #09222d 0%, #561734 100%);
+}
+
+button:hover {
+  background: none;
+  background-color: var(--color-colorida);
+}
+.home-perfil {
+  margin-right: 20px;
+
+  & img {
+    width: 360px;
+  }
+}
+.sociais {
+  margin-bottom: 50px;
+}
+.sociais-icons {
+  text-align: center;
+
+  & a {
+    margin: 0 8px;
+    font-size: 48px;
+    color: var(--color-principal);
+  }
+  a i:hover {
+    color: var(--color-colorida);
+    transform: scale(1.2);
+  }
+}
